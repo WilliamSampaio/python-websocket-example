@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "python-mirror"
+version = "0.1.0"
+description = ""
+authors = ["William Sampaio <56176702+WilliamSampaio@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "python_mirror"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+flask = "^2.3.2"
+flaskwebgui = "^1.0.6"
+flask-socketio = "^5.3.4"
+eventlet = "^0.33.3"
+gunicorn = "^20.1.0"
+waitress = "^2.1.2"
+pyinstaller = "^5.13.0"
+flask-session = "^0.5.0"
+jinja2 = "^3.1.2"
+flask-login = "^0.6.2"
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
